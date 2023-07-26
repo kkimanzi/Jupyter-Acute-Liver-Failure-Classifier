@@ -6,3 +6,6 @@ This assessment aims at building a classifier using machine learning algorithms 
 
 **Conclusion**
 The purpose of this assessment was to build a classifier to predict acute liver failure (ALF). The raw data imported into the Jupyter environment was cleaned to remove rows where ALF was missing. The missing values in the data set were filled using the median strategy to avoid skewing the data. Feature selection was accomplished using the Pearson correlation. The feature chosen had an absolute correlation of greater than two. The data was found to be skewed with the ALF results having more negative cases than positive ones. To handle this, random oversampling was done on the minority class. XGBoost, Search Grid, and Random Forest were investigated as machine learning algorithms for the classifier. Recall was chosen to be the most important metric due to the skew in the data and to since false negatives were seen to have a high consequence in the setting. It was found that Search Grid offered the best solution with a recall of 0.833.
+
+**Data Source**
+https://www.kaggle.com/datasets/rahul121/acute-liver-failure
